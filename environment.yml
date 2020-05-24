@@ -1,0 +1,7 @@
+name: "bq-dashboard"
+dependencies:
+  - numpy
+  - pandas
+  - altair
+  - pip:
+    - google-cloud-bigquery
