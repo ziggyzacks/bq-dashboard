@@ -37,7 +37,7 @@ class Job:
     @staticmethod
     def _destination(destination):
         if destination is not None:
-            dst = json.dumps(destination.__dict__)
+            dst = f"{destination.project}.{destination.dataset_id}.{destination.table_id}"
             return dst
 
     def _timeline(self, plan):
